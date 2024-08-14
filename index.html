@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrdeProx</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* AxelPolo */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        header {
+            margin-bottom: 10px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-image: url('logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: fadeIn 2s;
+            margin: 0 auto;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        main {
+            text-align: center;
+            padding: 0;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 10px; /* Ajusta esto según el espacio que desees */
+            animation: slideIn 1s;
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .content {
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: none;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card i {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 15px;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+        footer {
+            margin-top: auto;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <main>
+        <h1>OrdeProx</h1>
+        <div class="content">
+            <div class="card">
+                <i class="fas fa-video"></i>
+                <h3>Reels</h3>
+                <p>Crea y comparte contenido dinámico e inmersivo con Reels.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-camera"></i>
+                <h3>Fotografías</h3>
+                <p>Captura momentos especiales y compártelos con tus seguidores.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-music"></i>
+                <h3>Videos Musicales</h3>
+                <p>Produce videos musicales cautivadores que combinen música y narrativa visual.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-magic"></i>
+                <h3>Animaciones</h3>
+                <p>Trae tus ideas a la vida con animaciones innovadoras y cautivadoras.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-film"></i>
+                <h3>Cortometrajes</h3>
+                <p>Cuenta historias impactantes a través de la creación de cortometrajes.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 OrdeProx. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Agregar el audio para reproducir al cargar la página -->
+    <audio autoplay>
+        <source src="sonido.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</body>
+</html>
